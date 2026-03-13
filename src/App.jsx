@@ -6,7 +6,7 @@ import "./App.css";
 
 function App() {
   const [count, setCount] = useState(0);
-  console.log("rofl");
+  console.log("rendering App component");
 
   return (
     <>
