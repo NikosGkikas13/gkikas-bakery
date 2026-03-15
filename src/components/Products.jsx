@@ -1,8 +1,10 @@
 import { useState } from 'react'
 import { products, categories } from '../data/products'
+import { useLanguage } from '../context/LanguageContext'
 import './Products.css'
 
 function Products() {
+  const { lang, t } = useLanguage()
   const [active, setActive] = useState('all')
 
   const filtered = active === 'all'
@@ -13,18 +15,18 @@ function Products() {
     <section id="products" className="products section">
       <div className="container">
         <div className="section-header reveal">
-          <h2>Our Signature Bakes</h2>
-          <p>Each creation is a celebration of flavor, crafted with the finest ingredients and decades of expertise.</p>
+          <h2>{t.products.h2}</h2>
+          <p>{t.products.p}</p>
         </div>
 
         <div className="products__filters reveal">
-          {categories.map(({ id, label }) => (
+          {categories.map(({ id, label, label_el }) => (
             <button
               key={id}
               className={`products__filter ${active === id ? 'products__filter--active' : ''}`}
               onClick={() => setActive(id)}
             >
-              {label}
+              {lang === 'el' ? label_el : label}
             </button>
           ))}
         </div>
@@ -37,8 +39,8 @@ function Products() {
               </div>
               <div className="product-card__body">
                 <span className="product-card__category">{product.category}</span>
-                <h3>{product.name}</h3>
-                <p>{product.description}</p>
+                <h3>{lang === 'el' ? product.name_el : product.name}</h3>
+                <p>{lang === 'el' ? product.description_el : product.description}</p>
                 <div className="product-card__footer">
                   <span className="product-card__price">&euro;{product.price}</span>
                 </div>

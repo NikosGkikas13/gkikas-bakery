@@ -1,23 +1,26 @@
 import Icon from './Icon'
+import { useLanguage } from '../context/LanguageContext'
 import './Hero.css'
 
 function Hero() {
+  const { t } = useLanguage()
   return (
     <section id="hero" className="hero">
       <div className="hero__content container">
-        <span className="hero__badge">Est. 1987 &middot; Athens, Greece</span>
-        <h1>Baked with Love,<br />Crafted by Hand</h1>
-        <p className="hero__tagline">
-          From our stone ovens to your table — artisan breads, golden pastries,
-          and celebration cakes made the way they should be.
-        </p>
+        <span className="hero__badge">{t.hero.badge}</span>
+        <h1>
+          {t.hero.h1a}
+          <br />
+          {t.hero.h1b}
+        </h1>
+        <p className="hero__tagline">{t.hero.tagline}</p>
         <div className="hero__actions">
           <a href="#products" className="btn btn-primary">
-            Explore Our Bakes
+            {t.hero.cta1}
             <Icon name="arrow-right" size={20} />
           </a>
           <a href="#menu" className="btn btn-secondary hero__btn-secondary">
-            View Menu
+            {t.hero.cta2}
           </a>
         </div>
       </div>

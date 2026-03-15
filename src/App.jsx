@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import useScrollSpy from './hooks/useScrollSpy'
+import { LanguageProvider } from './context/LanguageContext'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
@@ -32,7 +33,7 @@ function App() {
   }, [])
 
   return (
-    <>
+    <LanguageProvider>
       <Navbar activeSection={activeSection} />
       <main>
         <Hero />
@@ -44,7 +45,7 @@ function App() {
         <Contact />
       </main>
       <Footer />
-    </>
+    </LanguageProvider>
   )
 }
 

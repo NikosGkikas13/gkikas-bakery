@@ -1,5 +1,6 @@
 import { testimonials } from '../data/testimonials'
 import Icon from './Icon'
+import { useLanguage } from '../context/LanguageContext'
 import './Testimonials.css'
 
 function StarRating({ rating }) {
@@ -18,26 +19,27 @@ function StarRating({ rating }) {
 }
 
 function Testimonials() {
+  const { lang, t } = useLanguage()
   return (
     <section id="testimonials" className="testimonials section">
       <div className="container">
         <div className="section-header reveal">
-          <h2>What Our Customers Say</h2>
-          <p>Kind words from the people who make it all worthwhile.</p>
+          <h2>{t.testimonials.h2}</h2>
+          <p>{t.testimonials.p}</p>
         </div>
 
         <div className="testimonials__grid">
-          {testimonials.map((t) => (
-            <article key={t.id} className="testimonial-card reveal">
+          {testimonials.map((item) => (
+            <article key={item.id} className="testimonial-card reveal">
               <Icon name="quote" size={32} className="testimonial-card__quote" />
-              <p>{t.text}</p>
+              <p>{lang === 'el' ? item.text_el : item.text}</p>
               <div className="testimonial-card__footer">
                 <div className="testimonial-card__avatar">
-                  {t.name.charAt(0)}
+                  {item.name.charAt(0)}
                 </div>
                 <div>
-                  <strong>{t.name}</strong>
-                  <StarRating rating={t.rating} />
+                  <strong>{item.name}</strong>
+                  <StarRating rating={item.rating} />
                 </div>
               </div>
             </article>

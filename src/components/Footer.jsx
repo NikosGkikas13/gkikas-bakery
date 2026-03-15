@@ -1,22 +1,27 @@
 import Icon from './Icon'
+import { useLanguage } from '../context/LanguageContext'
 import './Footer.css'
 
-const QUICK_LINKS = [
-  { label: 'About', href: '#about' },
-  { label: 'Products', href: '#products' },
-  { label: 'Menu', href: '#menu' },
-  { label: 'Gallery', href: '#gallery' },
-  { label: 'Reviews', href: '#testimonials' },
-  { label: 'Contact', href: '#contact' },
+const NAV_KEYS = [
+  { key: 'about', href: '#about' },
+  { key: 'products', href: '#products' },
+  { key: 'menu', href: '#menu' },
+  { key: 'gallery', href: '#gallery' },
+  { key: 'reviews', href: '#testimonials' },
+  { key: 'contact', href: '#contact' },
 ]
 
 const SOCIALS = [
-  { name: 'instagram', label: 'Instagram', href: '#' },
+  {
+    name: 'instagram',
+    label: 'Instagram',
+    href: 'https://www.instagram.com/gkikas_bakehouse/',
+  },
   { name: 'facebook', label: 'Facebook', href: '#' },
-  { name: 'github', label: 'GitHub', href: '#' },
 ]
 
 function Footer() {
+  const { t } = useLanguage()
   return (
     <footer className="footer">
       <div className="footer__inner container">
@@ -25,38 +30,40 @@ function Footer() {
             <Icon name="wheat" size={28} />
             <span>Gkikas Bakery</span>
           </div>
-          <p>Artisan breads, pastries, and cakes baked fresh daily with love and tradition since 1987.</p>
+          <p>{t.footer.tagline}</p>
         </div>
 
         <div className="footer__nav">
-          <h4>Quick Links</h4>
+          <h4>{t.footer.quickLinks}</h4>
           <ul>
-            {QUICK_LINKS.map(({ label, href }) => (
-              <li key={href}><a href={href}>{label}</a></li>
+            {NAV_KEYS.map(({ key, href }) => (
+              <li key={href}>
+                <a href={href}>{t.nav[key]}</a>
+              </li>
             ))}
           </ul>
         </div>
 
         <div className="footer__contact">
-          <h4>Get in Touch</h4>
+          <h4>{t.footer.getInTouch}</h4>
           <ul>
             <li>
               <Icon name="location" size={18} />
-              <span>42 Artisan Lane, Athens</span>
+              <span>Dimokratias 41, Marathonas 19007</span>
             </li>
             <li>
               <Icon name="phone" size={18} />
-              <span>+30 210 123 4567</span>
+              <span>22940-67557</span>
             </li>
             <li>
               <Icon name="mail" size={18} />
-              <span>hello@gkikasbakery.com</span>
+              <a href="mailto:fournosgkika@gmail.com">fournosgkika@gmail.com</a>
             </li>
           </ul>
         </div>
 
         <div className="footer__social">
-          <h4>Follow Us</h4>
+          <h4>{t.footer.followUs}</h4>
           <div className="footer__social-links">
             {SOCIALS.map(({ name, label, href }) => (
               <a key={name} href={href} aria-label={label}>
@@ -69,7 +76,10 @@ function Footer() {
 
       <div className="footer__bottom">
         <div className="container">
-          <p>&copy; {new Date().getFullYear()} Gkikas Bakery. All rights reserved.</p>
+          <p>
+            &copy; {new Date().getFullYear()} Gkikas Bakery. All rights
+            reserved.
+          </p>
         </div>
       </div>
     </footer>

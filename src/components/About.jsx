@@ -1,6 +1,8 @@
+import { useLanguage } from '../context/LanguageContext'
 import './About.css'
 
 function About() {
+  const { t } = useLanguage()
   return (
     <section id="about" className="about section">
       <div className="about__inner container">
@@ -10,31 +12,22 @@ function About() {
           </div>
         </div>
         <div className="about__content reveal">
-          <span className="about__label">Our Story</span>
-          <h2>Three Generations of Baking Excellence</h2>
-          <p>
-            What started as a small family oven in 1987 has grown into a beloved
-            neighborhood bakery — but our values haven't changed. Every loaf is
-            still shaped by hand, every pastry layered with care, and every cake
-            made to order.
-          </p>
-          <p>
-            We source our flour from local mills, our butter from small dairies,
-            and our honey from beekeepers we know by name. Because the best
-            ingredients make the best bread — and you deserve nothing less.
-          </p>
+          <span className="about__label">{t.about.label}</span>
+          <h2>{t.about.h2}</h2>
+          <p>{t.about.p1}</p>
+          <p>{t.about.p2}</p>
           <div className="about__stats">
             <div className="about__stat">
-              <strong>35+</strong>
-              <span>Years Baking</span>
+              <strong>{t.about.stat1Value}</strong>
+              <span>{t.about.stat1Label}</span>
             </div>
             <div className="about__stat">
-              <strong>50+</strong>
-              <span>Daily Recipes</span>
+              <strong>{t.about.stat2Value}</strong>
+              <span>{t.about.stat2Label}</span>
             </div>
             <div className="about__stat">
-              <strong>10K+</strong>
-              <span>Happy Customers</span>
+              <strong>{t.about.stat3Value}</strong>
+              <span>{t.about.stat3Label}</span>
             </div>
           </div>
         </div>
