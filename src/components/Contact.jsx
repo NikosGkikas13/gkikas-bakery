@@ -1,6 +1,6 @@
 import Icon from './Icon'
 import { useLanguage } from '../context/LanguageContext'
-import './Contact.css'
+import '../css/Contact.css'
 
 const HOUR_INDICES = [0, 1, 2, 3, 4, 5, 6]
 const TIME = '06:00 - 20:30'

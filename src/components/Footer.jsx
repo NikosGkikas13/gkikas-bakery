@@ -1,27 +1,31 @@
-import Icon from './Icon'
-import { useLanguage } from '../context/LanguageContext'
-import './Footer.css'
+import Icon from "./Icon";
+import { useLanguage } from "../context/LanguageContext";
+import "../css/Footer.css";
 
 const NAV_KEYS = [
-  { key: 'about', href: '#about' },
-  { key: 'products', href: '#products' },
-  { key: 'menu', href: '#menu' },
-  { key: 'gallery', href: '#gallery' },
-  { key: 'reviews', href: '#testimonials' },
-  { key: 'contact', href: '#contact' },
-]
+  { key: "about", href: "#about" },
+  { key: "products", href: "#products" },
+  { key: "menu", href: "#menu" },
+  { key: "gallery", href: "#gallery" },
+  { key: "reviews", href: "#testimonials" },
+  { key: "contact", href: "#contact" },
+];
 
 const SOCIALS = [
   {
-    name: 'instagram',
-    label: 'Instagram',
-    href: 'https://www.instagram.com/gkikas_bakehouse/',
+    name: "instagram",
+    label: "Instagram",
+    href: "https://www.instagram.com/gkikas_bakehouse/",
   },
-  { name: 'facebook', label: 'Facebook', href: '#' },
-]
+  {
+    name: "facebook",
+    label: "Facebook",
+    href: "https://www.facebook.com/profile.php?id=100074956521804",
+  },
+];
 
 function Footer() {
-  const { t } = useLanguage()
+  const { t } = useLanguage();
   return (
     <footer className="footer">
       <div className="footer__inner container">
@@ -83,7 +87,7 @@ function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }
 
-export default Footer
+export default Footer;

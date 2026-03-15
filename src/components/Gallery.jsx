@@ -1,5 +1,5 @@
 import { useLanguage } from '../context/LanguageContext'
-import './Gallery.css'
+import '../css/Gallery.css'
 
 const GALLERY_ITEMS = [
   { emoji: '🥖', tall: true },

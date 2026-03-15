@@ -1,6 +1,6 @@
 import { menuCategories } from '../data/menu'
 import { useLanguage } from '../context/LanguageContext'
-import './Menu.css'
+import '../css/Menu.css'
 
 function Menu() {
   const { lang, t } = useLanguage()

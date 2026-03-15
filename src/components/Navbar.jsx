@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import Icon from './Icon'
 import { useLanguage } from '../context/LanguageContext'
-import './Navbar.css'
+import '../css/Navbar.css'
 
 const NAV_KEYS = [
   { key: 'about', href: '#about' },

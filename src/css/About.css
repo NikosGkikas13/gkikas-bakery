@@ -48,6 +48,7 @@
 
 .about__stats {
   display: flex;
+  justify-content: space-evenly;
   gap: 2rem;
   margin-top: 1.5rem;
   padding-top: 1.5rem;

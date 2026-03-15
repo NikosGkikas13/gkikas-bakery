@@ -1,7 +1,7 @@
 import { testimonials } from '../data/testimonials'
 import Icon from './Icon'
 import { useLanguage } from '../context/LanguageContext'
-import './Testimonials.css'
+import '../css/Testimonials.css'
 
 function StarRating({ rating }) {
   return (

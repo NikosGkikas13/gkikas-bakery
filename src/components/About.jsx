@@ -1,8 +1,8 @@
-import { useLanguage } from '../context/LanguageContext'
-import './About.css'
+import { useLanguage } from "../context/LanguageContext";
+import "../css/About.css";
 
 function About() {
-  const { t } = useLanguage()
+  const { t } = useLanguage();
   return (
     <section id="about" className="about section">
       <div className="about__inner container">
@@ -25,15 +25,11 @@ function About() {
               <strong>{t.about.stat2Value}</strong>
               <span>{t.about.stat2Label}</span>
             </div>
-            <div className="about__stat">
-              <strong>{t.about.stat3Value}</strong>
-              <span>{t.about.stat3Label}</span>
-            </div>
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }
 
-export default About
+export default About;

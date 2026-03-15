@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { products, categories } from '../data/products'
 import { useLanguage } from '../context/LanguageContext'
-import './Products.css'
+import '../css/Products.css'
 
 function Products() {
   const { lang, t } = useLanguage()
