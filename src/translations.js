@@ -9,7 +9,7 @@ export const translations = {
       contact: "Contact",
     },
     hero: {
-      badge: "Est. 2004 · Marathon, Greece",
+      badge: "Est. 1994 · Marathon, Greece",
       h1a: "Gkikas Bakery",
       tagline: "Simple Ingredients. Real Flavor.",
       cta1: "Explore Our Bakes",
@@ -17,10 +17,10 @@ export const translations = {
     },
     about: {
       label: "Our Story",
-      h2: "Three Generations of Baking Excellence",
-      p1: "What started as a small family oven in 2004 has grown into a beloved neighborhood bakery — but our values haven't changed. Every loaf is still shaped by hand, every pastry layered with care, and every cake made to order.",
-      p2: "We source our flour from local mills, our butter from small dairies, and our honey from beekeepers we know by name. Because the best ingredients make the best bread — and you deserve nothing less.",
-      stat1Value: "20+",
+      h2: "Three Decades of Baking Excellence",
+      p1: "Our journey began in 1994 as a small family bakery and over the years has evolved into a beloved neighborhood bakery. Nevertheless, our values ​​remain the same: quality, care and respect for the tradition of baking.",
+      p2: "WWe source the best and purest ingredients, carefully selecting each raw material. With passion, expertise and love for what we do, we create daily products that stand out for their taste and quality. For us, good bread always starts with the right ingredients and the right care.",
+      stat1Value: "30+",
       stat1Label: "Years Baking",
       stat2Value: "50+",
       stat2Label: "Daily Recipes",
@@ -74,7 +74,7 @@ export const translations = {
     },
     footer: {
       tagline:
-        "Artisan breads, pastries, and cakes baked fresh daily with love and tradition since 2004.",
+        "Artisan breads, pastries, and cakes baked fresh daily with love and tradition since 1994.",
       quickLinks: "Quick Links",
       getInTouch: "Get in Touch",
       followUs: "Follow Us",
@@ -91,7 +91,7 @@ export const translations = {
       contact: "Επικοινωνία",
     },
     hero: {
-      badge: "Ιδρ. 2004 · Μαραθώνας, Ελλάδα",
+      badge: "Ιδρ. 1994 · Μαραθώνας, Ελλάδα",
       h1a: "Φούρνος Γκίκα",
       tagline: "Απλά υλικά. Πραγματική γεύση.",
       cta1: "Δείτε τα Προϊόντα μας",
@@ -99,10 +99,10 @@ export const translations = {
     },
     about: {
       label: "Η Ιστορία μας",
-      h2: "Τρεις Γενιές Αρτοποιικής Αριστείας",
-      p1: "Αυτό που ξεκίνησε ως ένας μικρός οικογενειακός φούρνος το 2004 έχει εξελιχθεί σε αγαπημένο φούρνο γειτονιάς — αλλά οι αξίες μας δεν άλλαξαν. Κάθε καρβέλι πλάθεται ακόμα με το χέρι, κάθε γλύκισμα στρώνεται με φροντίδα και κάθε τούρτα φτιάχνεται κατ' αγγελία.",
-      p2: "Προμηθευόμαστε το αλεύρι μας από τοπικούς μύλους, το βούτυρο από μικρές φάρμες και το μέλι από μελισσοκόμους που γνωρίζουμε προσωπικά. Γιατί τα καλύτερα υλικά δίνουν το καλύτερο ψωμί — και εσείς δεν αξίζετε τίποτα λιγότερο.",
-      stat1Value: "20+",
+      h2: "Τρεις Δεκαετίες Αρτοποιικής Αριστείας",
+      p1: "Το ταξίδι μας ξεκίνησε το 1994 ως ένας μικρός οικογενειακός φούρνος και με τα χρόνια εξελίχθηκε σε έναν αγαπημένο φούρνο της γειτονιάς. Παρ’ όλα αυτά, οι αξίες μας παραμένουν ίδιες: ποιότητα, φροντίδα και σεβασμός στην παράδοση της αρτοποιίας.",
+      p2: "Προμηθευόμαστε τα καλύτερα και πιο αγνά υλικά, επιλέγοντας προσεκτικά κάθε πρώτη ύλη. Με μεράκι, τεχνογνωσία και αγάπη για αυτό που κάνουμε, δημιουργούμε καθημερινά προϊόντα που ξεχωρίζουν για τη γεύση και την ποιότητά τους. Για εμάς, το καλό ψωμί ξεκινά πάντα από τα σωστά υλικά και τη σωστή φροντίδα.",
+      stat1Value: "30+",
       stat1Label: "Χρόνια Αρτοποιίας",
       stat2Value: "50+",
       stat2Label: "Καθημερινές Συνταγές",
@@ -156,7 +156,7 @@ export const translations = {
     },
     footer: {
       tagline:
-        "Χειροποίητα ψωμιά, γλυκίσματα και τούρτες, φρέσκα κάθε μέρα με αγάπη και παράδοση από το 2004.",
+        "Χειροποίητα ψωμιά, γλυκίσματα και τούρτες, φρέσκα κάθε μέρα με αγάπη και παράδοση από το 1994.",
       quickLinks: "Γρήγοροι Σύνδεσμοι",
       getInTouch: "Επικοινωνήστε",
       followUs: "Ακολουθήστε μας",

@@ -108,8 +108,15 @@
     background: var(--accent-light);
   }
 
-  &--active {
-    color: var(--accent);
+}
+
+.navbar__lang-btn--active {
+  color: var(--bg);
+  background: var(--accent);
+
+  &:hover {
+    color: var(--bg);
+    background: var(--accent);
   }
 }
 

@@ -1,16 +1,8 @@
 import { useState, useEffect } from 'react'
 import Icon from './Icon'
 import { useLanguage } from '../context/LanguageContext'
+import { NAV_KEYS } from '../data/nav'
 import '../css/Navbar.css'
-
-const NAV_KEYS = [
-  { key: 'about', href: '#about' },
-  { key: 'products', href: '#products' },
-  { key: 'menu', href: '#menu' },
-  { key: 'gallery', href: '#gallery' },
-  { key: 'reviews', href: '#testimonials' },
-  { key: 'contact', href: '#contact' },
-]
 
 function LangSwitcher() {
   const { lang, setLang } = useLanguage()
@@ -21,7 +13,7 @@ function LangSwitcher() {
         onClick={() => setLang('el')}
         aria-label="Ελληνικά"
       >
-        ΕΛ
+        GR
       </button>
       <span className="navbar__lang-sep" aria-hidden="true">|</span>
       <button

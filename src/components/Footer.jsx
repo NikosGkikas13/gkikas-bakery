@@ -1,15 +1,7 @@
 import Icon from "./Icon";
 import { useLanguage } from "../context/LanguageContext";
+import { NAV_KEYS } from "../data/nav";
 import "../css/Footer.css";
-
-const NAV_KEYS = [
-  { key: "about", href: "#about" },
-  { key: "products", href: "#products" },
-  { key: "menu", href: "#menu" },
-  { key: "gallery", href: "#gallery" },
-  { key: "reviews", href: "#testimonials" },
-  { key: "contact", href: "#contact" },
-];
 
 const SOCIALS = [
   {
@@ -53,11 +45,11 @@ function Footer() {
           <ul>
             <li>
               <Icon name="location" size={18} />
-              <span>Dimokratias 41, Marathonas 19007</span>
+              <a href="https://maps.google.com/?q=Dimokratias+41,+Marathonas+19007" target="_blank" rel="noopener noreferrer">Dimokratias 41, Marathonas 19007</a>
             </li>
             <li>
               <Icon name="phone" size={18} />
-              <span>22940-67557</span>
+              <a href="tel:+302294067557">22940-67557</a>
             </li>
             <li>
               <Icon name="mail" size={18} />

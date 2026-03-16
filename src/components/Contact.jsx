@@ -22,9 +22,9 @@ function Contact() {
               <div>
                 <h4>{t.contact.address}</h4>
                 <p>
-                  Dimokratias 41
-                  <br />
-                  Marathonas 19007
+                  <a href="https://maps.google.com/?q=Dimokratias+41,+Marathonas+19007" target="_blank" rel="noopener noreferrer">
+                    Dimokratias 41<br />Marathonas 19007
+                  </a>
                 </p>
               </div>
             </div>
@@ -33,7 +33,7 @@ function Contact() {
               <Icon name="phone" size={22} className="contact__icon" />
               <div>
                 <h4>{t.contact.phone}</h4>
-                <p>22940-67557</p>
+                <p><a href="tel:+302294067557">22940-67557</a></p>
               </div>
             </div>
 

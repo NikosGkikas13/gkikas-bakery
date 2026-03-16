@@ -1,4 +1,5 @@
 import { useLanguage } from "../context/LanguageContext";
+import aboutImg from "../assets/gkikas_bakehouse_1771680076_3837450841649627757_64959792227_1.jpg";
 import "../css/About.css";
 
 function About() {
@@ -7,9 +8,7 @@ function About() {
     <section id="about" className="about section">
       <div className="about__inner container">
         <div className="about__image reveal">
-          <div className="about__image-placeholder">
-            <span>🏠</span>
-          </div>
+          <img src={aboutImg} alt="Gkikas Bakery" />
         </div>
         <div className="about__content reveal">
           <span className="about__label">{t.about.label}</span>
