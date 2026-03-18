@@ -31,8 +31,10 @@
   font-weight: 700;
   transition: color 0.2s;
 
-  svg {
-    color: var(--accent);
+  img {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
   }
 
   &:hover {

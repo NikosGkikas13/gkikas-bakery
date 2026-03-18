@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import Icon from './Icon'
 import { useLanguage } from '../context/LanguageContext'
 import { NAV_KEYS } from '../data/nav'
+import navLogo from '../assets/nav_logo.png'
 import '../css/Navbar.css'
 
 function LangSwitcher() {
@@ -51,8 +52,7 @@ function Navbar({ activeSection }) {
     <nav className={`navbar ${scrolled ? 'navbar--scrolled' : ''}`}>
       <div className="navbar__inner container">
         <a href="#hero" className="navbar__logo">
-          <Icon name="wheat" size={28} />
-          <span>Gkikas Bakery</span>
+          <img src={navLogo} alt="Gkikas Bakery" />
         </a>
 
         <ul className="navbar__links">

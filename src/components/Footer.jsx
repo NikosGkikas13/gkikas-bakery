@@ -1,6 +1,7 @@
 import Icon from "./Icon";
 import { useLanguage } from "../context/LanguageContext";
 import { NAV_KEYS } from "../data/nav";
+import navLogo from "../assets/nav_logo.png";
 import "../css/Footer.css";
 
 const SOCIALS = [
@@ -23,7 +24,7 @@ function Footer() {
       <div className="footer__inner container">
         <div className="footer__brand">
           <div className="footer__logo">
-            <Icon name="wheat" size={28} />
+            <img src={navLogo} alt="Gkikas Bakery" />
             <span>Gkikas Bakery</span>
           </div>
           <p>{t.footer.tagline}</p>
